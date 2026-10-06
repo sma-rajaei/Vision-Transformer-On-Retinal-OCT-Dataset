@@ -346,7 +346,7 @@ $$
 CLS_{output}=x[:,0]
 $$
 
-7. This representation is then passed to a simple fully connected neural network with 8 outputs, corresponding to the eight retinal OCT classes in the dataset.
+6. This representation is then passed to a simple fully connected neural network with 8 outputs, corresponding to the eight retinal OCT classes in the dataset.
 The final output represents the predicted probability distribution over all classes.
 During training, the model uses **CrossEntropyLoss** to compare the predicted probabilities with the true labels
 The class with the highest predicted probability is selected as the final classification result.
