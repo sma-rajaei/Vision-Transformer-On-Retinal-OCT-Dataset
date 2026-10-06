@@ -3,7 +3,7 @@
 
 ## Overview
 
-This project presents a complete Vision Transformer (ViT) architecture built entirely from scratch for Retinal OCT image classification. Instead of relying on pre-built implementations, all core components, including Patch Embedding, CLS Token, Positional Embedding, Multi-Head Self-Attention, MLP Blocks, and Transformer Encoder Blocks, are manually implemented.
+This project presents a complete **Vision Transformer (ViT)** architecture built entirely from scratch for Retinal OCT image classification. Instead of relying on pre-built implementations, all core components, including Patch Embedding, CLS Token, Positional Embedding, Multi-Head Self-Attention, MLP Blocks, and Transformer Encoder Blocks, are manually implemented.
 The model is trained on a multi-class Retinal OCT dataset to explore the ability of Transformer-based architectures in learning global relationships within medical images and performing accurate disease classification.
 This project combines Deep Learning, Computer Vision, and Medical Image Analysis with a focus on understanding and implementing the internal mechanisms of Vision Transformers.
 
@@ -44,6 +44,8 @@ Each class can be identified through specific characteristics in the OCT images.
 | MH     | Macular Hole                     | Formation of a gap or hole in the central macular region                                         |
 | Normal | Healthy Retina                   | Normal retinal layer structure without pathological abnormalities                                |
 
+<img width="1200" height="1200" alt="image" src="https://github.com/user-attachments/assets/c0b9bb3b-2a82-46f7-9fed-d993c6b072d1" />
+
 
 ## Data Preprocessing & Augmentation 
 
@@ -56,7 +58,6 @@ Normalizing the images before feeding them into the model.
 Normalization helps improve training stability, accelerates convergence, and reduces large fluctuations in gradient updates during optimization.
 
 # Vision Transformer Architecture
-
 
 One of the main limitations of Convolutional Neural Networks (CNNs) is that each convolutional layer only processes a local region of the image. Since convolutional filters have limited receptive fields, they can only observe a small part of the image at each step.
 Therefore, if the model needs to understand the relationship between two distant regions of an image, it has to pass through many convolutional layers before those regions can influence each other.
