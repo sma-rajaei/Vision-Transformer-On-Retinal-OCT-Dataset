@@ -19,6 +19,9 @@ The goal of this project is to build a Vision Transformer from the ground up and
 
 # Dataset
 
+<img width="790" height="212" alt="image" src="https://github.com/user-attachments/assets/badabf0f-4267-406c-8334-64e5d1bd22e6" />
+
+
 The project uses a retinal Optical Coherence Tomography (OCT) image dataset for multi-class classification.
 link to the Dataset in Kaggle : https://www.kaggle.com/datasets/obulisainaren/retinal-oct-c8
 
@@ -44,7 +47,6 @@ Each class can be identified through specific characteristics in the OCT images.
 | MH     | Macular Hole                     | Formation of a gap or hole in the central macular region                                         |
 | Normal | Healthy Retina                   | Normal retinal layer structure without pathological abnormalities                                |
 
-<img width="1200" height="1200" alt="image" src="https://github.com/user-attachments/assets/c0b9bb3b-2a82-46f7-9fed-d993c6b072d1" />
 
 
 ## Data Preprocessing & Augmentation 
