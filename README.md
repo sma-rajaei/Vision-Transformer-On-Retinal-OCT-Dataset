@@ -263,7 +263,7 @@ $$
 $$
 This allows the model to learn richer and more complex representations while keeping the original token dimension for the next stages.
 
-## 4. Transformer Encoder Block
+## Transformer Encoder Block
 
 Each Transformer Encoder Block is the main building unit of the Vision Transformer architecture.
 Its purpose is to enrich the representation of each image patch by repeatedly applying Attention and Feature Transformation operations.
