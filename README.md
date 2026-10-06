@@ -341,11 +341,12 @@ In this project, the number of Transformer Encoder Blocks is set to 6
 4. After passing through all Transformer Encoder Blocks, a final Layer Normalization operation is applied to stabilize the output representations.
 
 5. At the classification stage, only the representation of the CLS Token is extracted. The CLS Token contains the aggregated information from all image patches and represents the overall image features.
+   
 $$
 CLS_{output}=x[:,0]
 $$
 
-6. This representation is then passed to a simple fully connected neural network with 8 outputs, corresponding to the eight retinal OCT classes in the dataset.
+7. This representation is then passed to a simple fully connected neural network with 8 outputs, corresponding to the eight retinal OCT classes in the dataset.
 The final output represents the predicted probability distribution over all classes.
 During training, the model uses **CrossEntropyLoss** to compare the predicted probabilities with the true labels
 The class with the highest predicted probability is selected as the final classification result.
