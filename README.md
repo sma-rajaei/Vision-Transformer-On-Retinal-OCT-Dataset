@@ -1,4 +1,4 @@
-# Retinal OCT Image Classification using Vision Transformers architecture built from scratch
+# Retinal OCT Image Classification using Vision Transformer architecture built from scratch
 
 
 ## Overview
