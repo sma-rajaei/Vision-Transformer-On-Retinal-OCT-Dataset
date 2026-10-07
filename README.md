@@ -1,4 +1,4 @@
-# Retinal OCT Image Classification using CNNs and Vision Transformers
+# Retinal OCT Image Classification using Vision Transformers
 
 
 ## Overview
