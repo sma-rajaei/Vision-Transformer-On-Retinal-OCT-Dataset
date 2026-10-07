@@ -186,9 +186,7 @@ $$ K_3=[0,1] $$
 The similarity values are:
 
 Similarity(Patch 1, K1):
-$$
-QK_1^T = [1,0] \times [1,0]^T = 1
-$$
+$$ QK_1^T = [1,0] \times [1,0]^T = 1 $$
 
 
 Similarity(Patch 1, K2):
