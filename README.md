@@ -171,34 +171,90 @@ $$ Q \times K^T $$
 
 the similarity between the Query of each token and the Keys of all other tokens is calculated.
 For example:
-Query of Patch 1:
-$$ Q=[1,0] $$
-
-Patch 1:
-$$ K_1=[1,0] $$
-
-Patch 2:
-$$ K_2=[0.8,0.2] $$
-
-Patch 3:
-$$ K_3=[0,1] $$
-
-The similarity values are:
-
-Similarity(Patch 1, K1):
-$$ QK_1^T = [1,0] \times [1,0]^T = 1 $$
+For Patch 1, the query vector is:
 
 
-Similarity(Patch 1, K2):
 $$
-QK_2^T = [1,0] \times [0.8,0.2]^T = 0.8
+Q = [1,0]
 $$
 
+The key vectors are:
 
-Similarity(Patch 1, K3):
 $$
-QK_3^T = [1,0] \times [0,1]^T = 0
+K_1 = [1,0]
 $$
+
+$$
+K_2 = [0.8,0.2]
+$$
+
+$$
+K_3 = [0,1]
+$$
+
+The similarity is calculated using the dot product:
+
+$$
+\text{Similarity}(Q,K_i)=QK_i^T
+$$
+
+
+#### Similarity between Patch 1 and $K_1$
+
+$$
+QK_1^T = [1,0]
+\begin{bmatrix}
+1\\
+0
+\end{bmatrix}
+$$
+
+$$
+= (1 \times 1) + (0 \times 0)
+$$
+
+$$
+= 1
+$$
+
+
+#### Similarity between Patch 1 and $K_2$
+
+$$
+QK_2^T = [1,0]
+\begin{bmatrix}
+0.8\\
+0.2
+\end{bmatrix}
+$$
+
+$$
+= (1 \times 0.8) + (0 \times 0.2)
+$$
+
+$$
+= 0.8
+$$
+
+
+#### Similarity between Patch 1 and $K_3$
+
+$$
+QK_3^T = [1,0]
+\begin{bmatrix}
+0\\
+1
+\end{bmatrix}
+$$
+
+$$
+= (1 \times 0) + (0 \times 1)
+$$
+
+$$
+= 0
+$$
+
 
 Therefore, Patch 1 pays the most attention to Patch 1 itself, then to Patch 2, and has no attention to Patch 3.
 
