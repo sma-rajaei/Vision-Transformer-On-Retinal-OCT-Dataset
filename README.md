@@ -7,6 +7,9 @@ This project presents a complete **Vision Transformer (ViT)** architecture built
 The model is trained on a multi-class Retinal OCT dataset to explore the ability of Transformer-based architectures in learning global relationships within medical images and performing accurate disease classification.
 This project combines Deep Learning, Computer Vision, and Medical Image Analysis with a focus on understanding and implementing the internal mechanisms of Vision Transformers.
 
+**This project was not intended to achieve state-of-the-art performance or maximize model accuracy through extensive hyperparameter tuning, advanced data augmentation techniques, or exhaustive optimization.
+Therefore, the reported results should be considered as a demonstration of the implemented architecture and its learning process rather than a benchmark performance evaluation.**
+
 ## Research Motivation
 
 Retinal OCT provides detailed cross-sectional images of retinal structures and plays an important role in medical diagnosis. Accurate analysis of these images can help identify and differentiate various retinal conditions.
