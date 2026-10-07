@@ -405,3 +405,13 @@ The final output represents the predicted probability distribution over all clas
 During training, the model uses **CrossEntropyLoss** to compare the predicted probabilities with the true labels
 The class with the highest predicted probability is selected as the final classification result.
 
+# Model Performance after only 30 epochs of training (Only On Validation Data)
+
+| Precision | Recall | F1-score | Accuracy |
+|-----------|--------|----------|----------|
+| 0.8131    | 0.8143 | 0.8130   | 0.81     |
+
+<img width="1001" height="470" alt="image" src="https://github.com/user-attachments/assets/d519d9d3-9de3-4f9a-984b-15b1d4989684" />
+
+
+
